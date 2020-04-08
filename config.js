@@ -15,7 +15,8 @@ config.https_port = 8443;
 
 // MySQL configuration
 config.sql_host = "localhost";
-config.sql_user = "myuser";
-config.sql_pass = "mypass";
+config.sql_user = "svbh";
+config.sql_pass = "GXnc4oGi7C5VhQ3xLnRi";
+config.sql_db   = "svbh";
 
 module.exports = config;

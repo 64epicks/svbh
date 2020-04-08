@@ -8,11 +8,41 @@
         <meta name="author" content="Svensk backhoppnings">
 
         <link rel="stylesheet" href="css/site.css">
-        <script src="code/site.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     </head>
     <body>
         <div id="load_symbol" class="load_spinner"></div>
         <div id="app" style="visibility: hidden;">
+            <section class="navbar">
+            <div class="navbar-container">
+                <div class="brand">
+                    <a href="/"><img src="content/logo.svg"></a>
+                </div>
+                <nav>
+                    <div class="navbar-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="/">Hem</a>
+                        </li>
+                        <li>
+                            <a href="#">Konto</a>
+                            <ul class="navbar-dropdown">
+                                <li>
+                                    <a href="/login">Logga in</a>
+                                </li>
+                                <li>
+                                    <a href="/register">Ansök om egen klubb</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </section>
         </div>
+
+        <script src="code/home.js"></script>
+        <script src="code/site.js"></script>
     </body>
 </html>

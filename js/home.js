@@ -1,0 +1,2 @@
+
+var pagename = 'Hem';

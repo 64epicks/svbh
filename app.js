@@ -19,7 +19,7 @@ var mysql = mysql_p.createConnection({
 
 mysql.connect(function (err) {
     if (err) {
-        console.error("Mysql: " + err.stack);
+        console.error("Mysql connection error: " + err.stack);
         process.exit();
     }
     console.log("Connected to " + config.sql_host);
@@ -29,6 +29,10 @@ app.use(express.static('html'));
 app.use('/css', express.static('css'));
 app.use('/code', express.static('js'));
 app.use('/content', express.static('assets'));
+
+app.use('/api', function(req, res) {
+
+});
 
 var http_server = http.createServer(app);
 http_server.listen(config.port);
