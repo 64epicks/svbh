@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+.load_spinner {
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-top-color:   rgba(0, 110, 255, 1);
+    animation: spinner 650ms linear infinite;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
