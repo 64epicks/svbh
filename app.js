@@ -6,9 +6,9 @@ var fs        = require('fs');
 var http      = require('http');
 var https     = require('https');
 
-const express = require('express');
+const express    = require('express');
 const bodyparser = require('body-parser');
-var api = require('./api');
+const api        = require('./api/api');
 
 var app = express();
 

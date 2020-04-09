@@ -1,6 +1,6 @@
 // TODO: add mail delivery support
 
-const express = require('express');
+const express   = require('express');
 const mysql_p   = require('mysql');
 const config    = require('./config');
 const bcrypt    = require('bcrypt');
